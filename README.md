@@ -1,5 +1,6 @@
 # anime-girls-with-programming-books-api
 Fetch images of anime girls holding programming books
+![Kuriyama_Mirai_reading_OOP_and_Java](https://user-images.githubusercontent.com/76162540/195862816-8f5272fd-9bc5-43af-a705-b82311820b48.png)
 
 ## Routes: 
 * Root: `/`
@@ -48,3 +49,6 @@ Fetch images of anime girls holding programming books
   "image" : "https://raw.githubusercontent.com/cat-milk/Anime-Girls-Holding-Programming-Books/master/Python/Rias_Gremory_reading_automate_the_boring_stuff_with_python.png"
 }
 ```
+
+* Random: `/random`
+  - Returns an image based on any random language
