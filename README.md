@@ -49,3 +49,6 @@ Fetch images of anime girls holding programming books
   "image" : "https://raw.githubusercontent.com/cat-milk/Anime-Girls-Holding-Programming-Books/master/Python/Rias_Gremory_reading_automate_the_boring_stuff_with_python.png"
 }
 ```
+
+* Random: `/random`
+  - Returns an image based on any random language
