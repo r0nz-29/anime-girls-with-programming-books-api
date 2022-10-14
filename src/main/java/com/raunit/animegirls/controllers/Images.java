@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -39,6 +40,11 @@ public class Images {
         }
 
         String rawArray = rawResponse.body().string();
+
+        if (rawArray.contains("Not Found")) {
+            return Collections.emptyList();
+        }
+
         JSONArray imageDetails = new JSONArray(rawArray);
 
         for (int i=0; i<imageDetails.length(); i++) {
