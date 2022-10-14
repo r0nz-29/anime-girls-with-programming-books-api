@@ -2,6 +2,7 @@ package com.raunit.animegirls.controllers;
 
 import com.raunit.animegirls.Utils;
 import com.raunit.animegirls.models.Image;
+import com.raunit.animegirls.models.Language;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -57,5 +58,13 @@ public class Images {
         List<Image> images = this.getAllImagesOfALanguage(language);
 
         return images.get(Utils.randomIntBetween(0, images.size()));
+    }
+
+    @GetMapping("/random")
+    public Image getRandomImage() throws IOException {
+        Languages controller = new Languages();
+        List<Language> languages = controller.listAvailableLanguages();
+
+        return getRandomImageOfLanguage(languages.get(Utils.randomIntBetween(0, languages.size())).name);
     }
 }
