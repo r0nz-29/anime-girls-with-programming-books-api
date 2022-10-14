@@ -1,8 +1,5 @@
 package com.raunit.animegirls.controllers;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.raunit.animegirls.Utils;
 import com.raunit.animegirls.models.Language;
 import okhttp3.OkHttpClient;
@@ -10,8 +7,6 @@ import okhttp3.Request;
 import okhttp3.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
