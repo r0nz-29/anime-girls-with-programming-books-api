@@ -16,7 +16,6 @@ import java.util.List;
 
 @RestController
 public class Languages {
-
     @GetMapping("/")
     public List<Language> listAvailableLanguages() throws IOException {
         OkHttpClient client = new OkHttpClient();

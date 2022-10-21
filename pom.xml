@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.4</version>
+		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.raunit</groupId>
+	<groupId>com.raunits</groupId>
 	<artifactId>anime-girls</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>anime-girls-holding-programming-books</name>
+	<name>anime-girls-with-cs-books</name>
 	<description>Retrieves images of anime girls holding programming books</description>
 	<properties>
 		<java.version>11</java.version>
@@ -19,7 +19,17 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -31,13 +41,11 @@
 			<artifactId>okhttp</artifactId>
 			<version>4.10.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20220924</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
