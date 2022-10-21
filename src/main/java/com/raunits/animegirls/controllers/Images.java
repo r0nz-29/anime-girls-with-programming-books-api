@@ -40,6 +40,12 @@ public class Images {
         return new ArrayList<>(jdbcTemplate.query(sql, (result, n) -> new Image(result.getString("link"), result.getString("category"), result.getString("filename")))).get(0);
     }
 
+    @GetMapping("/covers")
+    public List<LanguageCover> getCovers() {
+        String sql = new StringBuilder().append("SELECT DISTINCT ON (category) filename, link, category FROM Images").toString();
+        return new ArrayList<>(jdbcTemplate.query(sql, (result, n) -> new LanguageCover(result.getString("category"), new Image(result.getString("link"), result.getString("category"), result.getString("filename")))));
+    }
+
     @GetMapping("/{language}/cover")
     public LanguageCover getLanguageWithRandomCover(@PathVariable String language) {
         return new LanguageCover(language, this.getRandomImageOfLanguage(language));
