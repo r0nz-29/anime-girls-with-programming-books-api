@@ -1,6 +1,6 @@
 # anime-girls-with-programming-books-api
 Fetch images of anime girls holding programming books  
-Try out the API: [nerd-waifus.fly.dev](https://nerd-waifus.fly.dev)  
+Try out the API: [nerdwaifus.fly.dev](https://nerdwaifus.fly.dev)  
 ![Kuriyama_Mirai_reading_OOP_and_Java](https://user-images.githubusercontent.com/76162540/195862816-8f5272fd-9bc5-43af-a705-b82311820b48.png)
 
 ## Routes: 
